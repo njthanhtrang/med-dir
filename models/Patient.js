@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Patients extends Model {}
+class Patient extends Model {}
 
-Patients.init(
+Patient.init(
   {
     // define columns
   },
@@ -13,8 +13,8 @@ Patients.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'patients',
+    modelName: 'patient',
   }
 );
 
-module.exports = Patients;
+module.exports = Patient;
