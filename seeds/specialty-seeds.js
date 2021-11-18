@@ -16,6 +16,9 @@ const specialtyData = [
   {
     specialty_name: 'ENT',
   },
+  {
+    specialty_name: 'Pediatrics',
+  },
 ];
 
 const seedSpecialties = () => Specialty.bulkCreate(specialtyData);

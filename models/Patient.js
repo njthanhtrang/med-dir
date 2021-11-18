@@ -7,6 +7,21 @@ class Patient extends Model {}
 Patient.init(
   {
     // define columns
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    patient_name: {
+      type: DataTypes.STRING
+    },
+    meds: {
+      type: DataTypes.STRING
+    },
+    condition: {
+      type: DataTypes.STRING
+    }
   },
   {
     sequelize,
